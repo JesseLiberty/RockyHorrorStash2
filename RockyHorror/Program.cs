@@ -12,13 +12,15 @@ namespace RockyHorror
             showing.NumberOfSeats = 250;
             showing.ShowTimes = new List<DateTime>
             {
-                new DateTime(0,0,0,10,0,0),
-                new DateTime(0,0,0,13,0,0),
-                new DateTime(0,0,0,16,0,0),
-                new DateTime(0,0,0,19,0,0),
-                new DateTime(0,0,0,22,0,0),
-                new DateTime(0,0,0,0,0,1)
+                new DateTime(2021,4,13,10,0,0),
+                new DateTime(2021,4,13,13,0,0),
+                new DateTime(2021,4,13,16,0,0),
+                new DateTime(2021,4,13,19,0,0),
+                new DateTime(2021,4,13,22,0,0),
+                new DateTime(2021,4,13,0,0,1)
             };
+
+            Console.WriteLine($"{showing.Location} has {showing.NumberOfSeats} and there is a show at {showing.ShowTimes[3]}");
         }
     }
 }
